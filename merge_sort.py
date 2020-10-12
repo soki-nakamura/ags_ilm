@@ -36,6 +36,4 @@ def merge_sort(input_list):
     right = merge_sort(right_list)
 
     return merge_list(left, right)
-
-
-merge_sort(a)
+)

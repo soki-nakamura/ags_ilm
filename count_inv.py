@@ -1,8 +1,6 @@
 import re
 
-
 def merge_and_count_inv(left_list, right_list):
-
     i = 0
     j = 0
     left_size = len(left_list)
@@ -46,7 +44,5 @@ with open('data/IntegerArray.txt') as f:
     text = f.readlines()
 
 processed_text = [int(re.sub('\n','',t)) for t in text]
-processed_text[0:100]
 result = sort_and_count_inv(processed_text)
-len(processed_text)
-result
+print(f'the number of inv is {result}')
