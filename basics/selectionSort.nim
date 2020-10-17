@@ -10,7 +10,8 @@ proc selectionSort(A: var seq, N:int): seq =
         minj = j
         swap(A[i], A[minj])
         num_of_exchange += 1
-  echo (num_of_exchange)
+        echo A
+  echo ("num_of_exchange : ", num_of_exchange)
   return A
 
 var A = readLine(stdin).split().map(parseInt)
